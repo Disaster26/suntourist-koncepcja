@@ -1,0 +1,698 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Biuro turystyczne Zamość - wycieczki szkolne, kolonie, wyjazdy dla grup | Sun Tourist</title>
+<meta name="description" content="Sun Tourist, biuro turystyczne w Zamościu: wycieczki szkolne, kolonie i obozy, zielone szkoły, pielgrzymki i wyjazdy samolotowe. Wyszukaj wycieczkę po kierunku, terminie i cenie. Tel. 604 994 346.">
+<meta name="theme-color" content="#0B2C47">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="img/hero-m-476.webp" imagesrcset="img/hero-m-360.webp 360w, img/hero-m-476.webp 476w" imagesizes="100vw" media="(max-width:760px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-d-1147.webp" imagesrcset="img/hero-d-960.webp 960w, img/hero-d-1147.webp 1147w" imagesizes="100vw" media="(min-width:761px)" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="fonts/jost-rdzen.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/jost-pl.woff2" crossorigin>
+<style>
+@font-face{font-family:Jost;font-weight:300 700;font-display:optional;src:url(fonts/jost-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2026,U+20AC}
+@font-face{font-family:Jost;font-weight:300 700;font-display:optional;src:url(fonts/jost-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"Jost fb";src:local("Arial");size-adjust:96%;ascent-override:104%;descent-override:30%}
+/* kolory: zolty slonca z logo #FFE500, niebieski z obecnej strony #2DA0CE (tekstowo #0F6C96), granat nieba #0B2C47 */
+:root{--y:#FFE500;--y2:#F5D400;--sky:#2DA0CE;--b:#0F6C96;--n:#0B2C47;--n2:#123B5C;--ink:#0F1E2B;--mut:#4A5867;--g:#F1F4F7;--line:#DCE3EA;--hh:64px;--w:min(calc(100vw - 32px),1800px);--F:Jost,"Jost fb",Arial,sans-serif}
+@media(min-width:1000px){:root{--hh:76px;--w:min(calc(100vw - 80px),1800px)}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hh);-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--F);font-size:clamp(16px,.2vw + 15px,19px);line-height:1.55;color:var(--ink);background:#fff;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{margin:0;line-height:1.08;letter-spacing:-.015em;font-weight:600}
+h2{font-size:clamp(30px,2.4vw + 18px,56px)}
+p{margin:0}
+ul{margin:0;padding:0;list-style:none}
+button,select,input{font:inherit;color:inherit}
+.wrap{width:var(--w);margin:0 auto}
+.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:8px;z-index:99;background:#fff;padding:8px 12px}
+.sun{width:1em;height:1em;flex:none;color:var(--y)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;background:var(--y);color:var(--n);font-weight:600;font-size:1.05rem;text-decoration:none;border:0;border-radius:4px;cursor:pointer;transition:background .15s}
+.btn:hover{background:var(--y2)}
+.btn:focus-visible,a:focus-visible,select:focus-visible,button:focus-visible{outline:3px solid var(--sky);outline-offset:2px}
+
+/* naglowek */
+.top{position:sticky;top:0;z-index:40;background:var(--n);color:#fff;height:var(--hh)}
+.top .wrap{height:100%;display:flex;align-items:center;gap:24px}
+.logo{display:block;flex:none}
+.logo img{height:38px;width:auto}
+@media(min-width:1000px){.logo img{height:48px}}
+.nav{display:none;gap:4px;margin-left:auto}
+.nav a{padding:10px 14px;text-decoration:none;font-weight:500;color:#DCE8F2;border-radius:4px}
+.nav a:hover{color:#fff;background:var(--n2)}
+.tel{display:none;align-items:center;gap:10px;text-decoration:none;font-weight:600;color:var(--y);font-size:1.1rem;white-space:nowrap}
+.tel svg{width:20px;height:20px}
+.burger{margin-left:auto;display:flex;align-items:center;justify-content:center;width:48px;height:48px;background:none;border:0;color:#fff;cursor:pointer}
+.burger svg{width:28px;height:28px}
+.mtel{display:flex;align-items:center;justify-content:center;width:48px;height:48px;color:var(--y)}
+.mtel svg{width:24px;height:24px}
+@media(min-width:1000px){.nav,.tel{display:flex}.burger,.mtel{display:none}}
+.menu{position:fixed;inset:var(--hh) 0 auto 0;background:var(--n);padding:8px 16px 24px;display:grid;gap:2px;border-top:1px solid var(--n2)}
+.menu[hidden]{display:none}
+.menu a{display:block;padding:14px 4px;color:#fff;text-decoration:none;font-size:1.2rem;border-bottom:1px solid var(--n2)}
+.menu a.btn{margin-top:16px;border:0;color:var(--n);display:flex;padding:0 20px}
+
+/* pierwszy ekran */
+.hero{position:relative;color:#fff;background:var(--n);min-height:calc(100svh - var(--hh));display:flex;flex-direction:column;justify-content:flex-end}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%}
+.hero picture img{object-fit:cover;object-position:50% 40%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,44,71,.55) 0%,rgba(11,44,71,.1) 30%,rgba(11,44,71,.55) 58%,rgba(11,44,71,.92) 100%)}
+@media(min-width:761px){.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(11,44,71,.6) 0%,rgba(11,44,71,0) 60%)}}
+.hero .wrap{position:relative;z-index:2;padding:28px 0 20px}
+.hero h1{font-size:clamp(31px,3.4vw + 16px,76px);max-width:15ch;text-wrap:balance}
+.hero .lead{margin-top:14px;max-width:44ch;font-size:clamp(17px,.5vw + 15px,22px);color:#E8F0F7}
+.search{margin-top:24px;background:#fff;color:var(--ink);border-radius:6px;padding:10px;display:grid;grid-template-columns:1fr 1fr;gap:8px;box-shadow:0 18px 40px rgba(4,20,34,.35)}
+.fld{display:block;border:1px solid var(--line);border-radius:4px;padding:6px 12px 4px;background:#fff;position:relative}
+.fld span{display:block;font-size:13px;color:var(--mut);line-height:1.2}
+.fld select{display:block;width:100%;border:0;background:transparent;padding:2px 0 4px;font-size:16px;font-weight:500;appearance:none;-webkit-appearance:none;cursor:pointer;color:var(--ink)}
+.fld::after{content:"";position:absolute;right:14px;bottom:15px;width:8px;height:8px;border-right:2px solid var(--b);border-bottom:2px solid var(--b);transform:rotate(45deg);pointer-events:none}
+.fld.k{grid-column:1/-1}
+.search .btn{grid-column:1/-1;min-height:54px}
+@media(min-width:761px){.search{grid-template-columns:1.3fr 1fr 1fr auto;padding:12px;max-width:1100px}.fld.k{grid-column:auto}.search .btn{grid-column:auto;padding:0 32px}}
+.quick{display:none;margin-top:18px;gap:8px 22px;flex-wrap:wrap}
+.quick a{color:#fff;text-decoration:none;font-weight:500;display:inline-flex;align-items:center;gap:8px}
+.quick a:hover{color:var(--y)}
+.quick .sun{width:20px;height:20px}
+@media(min-width:761px) and (min-height:700px){.quick{display:flex}}
+
+/* sekcje */
+.sec{padding:clamp(56px,6vw,110px) 0}
+.sec.g{background:var(--g)}
+.head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:clamp(24px,2.4vw,40px);flex-wrap:wrap}
+.head p{color:var(--mut);max-width:58ch;margin-top:10px}
+.rays{display:block;width:54px;height:18px;color:var(--y);margin-bottom:14px}
+.arrows{display:none;gap:8px}
+.arrows button{width:52px;height:52px;border:1px solid var(--line);background:#fff;border-radius:4px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.arrows button:hover{border-color:var(--n)}
+.arrows svg{width:22px;height:22px}
+@media(min-width:900px){.arrows{display:flex}}
+
+/* karty wycieczek */
+.row{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;cursor:grab;padding-bottom:4px}
+.row::-webkit-scrollbar{display:none}
+.row.drag{cursor:grabbing;scroll-snap-type:none}
+.row .card{flex:0 0 min(78vw,340px);scroll-snap-align:start}
+@media(min-width:1500px){.row .card{flex-basis:calc((100% - 80px)/6)}}
+.card{background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden;display:flex;flex-direction:column;transition:border-color .15s}
+.card:hover{border-color:#9FB3C4}
+.card .ph{display:block;aspect-ratio:3/2;overflow:hidden;background:var(--g)}
+.card .ph img{width:100%;height:100%;object-fit:cover;-webkit-user-drag:none;user-select:none}
+.cb{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1}
+.meta{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:15px;color:var(--b);font-weight:600}
+.meta span+span::before{content:"";display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--y2);margin:0 10px 3px 0;vertical-align:middle}
+.card h3{font-size:1.25rem;margin-top:8px;line-height:1.2}
+.card h3 a{text-decoration:none}
+.card h3 a:hover{text-decoration:underline;text-decoration-color:var(--y2);text-decoration-thickness:3px;text-underline-offset:3px}
+.pl{color:var(--mut);font-size:15px;margin-top:4px}
+.rz{font-size:14px;color:var(--mut);margin-top:auto;padding-top:14px}
+.pr{margin-top:6px;font-size:15px;color:var(--mut)}
+.pr b{font-size:1.45rem;color:var(--n);font-weight:700;margin-right:2px}
+
+/* katalog */
+.cat{display:grid;gap:24px}
+@media(min-width:1100px){.cat{grid-template-columns:290px 1fr;gap:40px;align-items:start}}
+.filters{display:grid;gap:12px}
+@media(min-width:1100px){.filters{position:sticky;top:calc(var(--hh) + 20px)}}
+.chips{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+.chips::-webkit-scrollbar{display:none}
+@media(min-width:1100px){.chips{flex-direction:column;overflow:visible}}
+.chip{flex:none;min-height:44px;padding:0 16px;border:1px solid var(--line);background:#fff;border-radius:4px;cursor:pointer;font-weight:500;text-align:left;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.chip small{color:var(--mut);font-size:14px}
+.chip[aria-pressed=true]{background:var(--n);border-color:var(--n);color:#fff}
+.chip[aria-pressed=true] small{color:var(--y)}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+@media(min-width:1100px){.fgrid{grid-template-columns:1fr}}
+.fres{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px;flex-wrap:wrap}
+.fres b{font-size:1.15rem}
+.clear{background:none;border:0;color:var(--b);font-weight:600;cursor:pointer;padding:10px 0;text-decoration:underline;text-underline-offset:3px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.grid .card[hidden]{display:none}
+.empty{padding:40px 0;color:var(--mut)}
+.more{width:100%;margin-top:16px;min-height:52px;border:1px solid var(--n);background:#fff;color:var(--n);font-weight:600;border-radius:4px;cursor:pointer}
+.more{display:none}
+@media(max-width:760px){.grid:not(.all) .card:nth-child(n+7){display:none}.grid:not(.all)~.more{display:block}}
+
+/* karta wycieczki */
+.trip{display:grid;gap:32px}
+.trip{grid-template-areas:"a" "b" "c"}.t-a{grid-area:a}.t-c{grid-area:c}.book{grid-area:b}
+@media(min-width:1100px){.trip{grid-template-columns:minmax(0,1fr) 400px;grid-template-areas:"a b" "c b";column-gap:56px;row-gap:40px;align-items:start}.book{align-self:start}}
+@media(min-width:1100px){.gal{height:clamp(320px,28vw,560px)}.gal button:first-child{aspect-ratio:auto}}
+@media(min-width:1600px){.t-c{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:56px}.t-c .inc{grid-template-columns:1fr;border-top:0;margin-top:8px;padding-top:0}}
+.crumb{font-size:15px;color:var(--mut);margin-bottom:12px}
+.crumb a{color:var(--b)}
+.trip h2{font-size:clamp(30px,2.2vw + 18px,54px)}
+.facts{display:flex;flex-wrap:wrap;gap:8px 28px;margin-top:16px;font-weight:500}
+.facts span{display:inline-flex;align-items:center;gap:8px}
+.facts .sun{width:20px;height:20px;color:var(--y2)}
+.gal{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:8px;margin-top:24px;border-radius:6px;overflow:hidden}
+.gal button{padding:0;border:0;background:var(--g);cursor:zoom-in;display:block;overflow:hidden}
+.gal img{width:100%;height:100%;object-fit:cover}
+.gal button:first-child{grid-row:1/3;aspect-ratio:4/3}
+.prog{margin-top:8px}
+.prog h3,.inc h3{font-size:1.5rem;margin-bottom:18px}
+.days{position:relative}
+.day{position:relative;padding:0 0 26px 50px}
+.day::before{content:"";position:absolute;left:15px;top:30px;bottom:0;border-left:2px dashed #B9C8D5}
+.day:last-child::before{display:none}
+.day .sun{position:absolute;left:0;top:0;width:32px;height:32px;color:var(--y2)}
+.day h4{margin:0;font-size:1.1rem;font-weight:600;line-height:1.3;padding-top:3px}
+.day h4 span{color:var(--b)}
+.day p{margin-top:6px;color:#2A3947;max-width:70ch}
+.day ul{margin-top:8px;display:grid;gap:8px;max-width:70ch}
+.day li{padding-left:18px;position:relative;color:#2A3947}
+.day li::before{content:"";position:absolute;left:0;top:.6em;width:8px;height:3px;border-radius:2px;background:var(--sky)}
+.inc{display:grid;gap:24px;margin-top:20px;padding-top:32px;border-top:1px solid var(--line)}
+@media(min-width:800px){.inc{grid-template-columns:1fr 1fr}}
+.inc p{color:#2A3947}
+.note{font-size:15px;color:var(--mut);margin-top:14px}
+.book{border:1px solid var(--line);border-radius:6px;padding:22px;background:#fff;box-shadow:0 10px 30px rgba(11,44,71,.08)}
+@media(min-width:1100px){.book{position:sticky;top:calc(var(--hh) + 20px)}}
+.book .from{color:var(--mut);font-size:15px}
+.book .big{font-size:2.3rem;font-weight:700;color:var(--n);line-height:1.1}
+.book .big small{font-size:1rem;font-weight:500;color:var(--mut)}
+.book fieldset{border:0;margin:18px 0 0;padding:0}
+.book legend{font-weight:600;margin-bottom:8px;padding:0}
+.opt{display:flex;align-items:center;gap:12px;padding:12px 14px;border:1px solid var(--line);border-radius:4px;cursor:pointer;margin-bottom:8px}
+.opt input{width:20px;height:20px;accent-color:var(--n);margin:0}
+.opt b{font-weight:600}
+.opt small{display:block;color:var(--mut);font-size:14px}
+.opt.on{border-color:var(--n);box-shadow:inset 0 0 0 1px var(--n)}
+.pay{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.pay .opt{flex-direction:column;justify-content:center;gap:6px;text-align:center;padding:12px 6px;margin:0;font-weight:600}
+.qty{display:flex;align-items:center;justify-content:space-between;border:1px solid var(--line);border-radius:4px;padding:4px}
+.qty button{width:44px;height:44px;border:0;background:var(--g);border-radius:4px;font-size:1.4rem;cursor:pointer}
+.qty output{font-weight:600;font-size:1.1rem}
+.sum{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);display:grid;gap:4px}
+.sum div{display:flex;justify-content:space-between;gap:12px}
+.sum div:last-child{font-weight:700;font-size:1.15rem;color:var(--n)}
+.book .btn{width:100%;margin-top:16px;min-height:56px}
+.msg{margin-top:12px;font-size:15px;background:var(--g);border-left:4px solid var(--y2);padding:12px 14px}
+.msg[hidden]{display:none}
+
+/* dlaczego - jedyna ciemna sekcja */
+.why{background:var(--n);color:#fff}
+.why h2{max-width:20ch}
+.why .lead2{color:#C9D8E5;max-width:60ch;margin-top:14px;font-size:1.1rem}
+.wl{display:grid;gap:0;margin-top:40px;border-top:1px solid #2A5170}
+@media(min-width:800px){.wl{grid-template-columns:1fr 1fr}}
+@media(min-width:1400px){.wl{grid-template-columns:repeat(3,1fr)}}
+.wl li{padding:26px 26px 28px 0;border-bottom:1px solid #2A5170}
+.wl h3{font-size:1.35rem;display:flex;align-items:center;gap:12px}
+.wl h3 .sun{width:30px;height:30px}
+.wl p{color:#C9D8E5;margin-top:10px;max-width:46ch}
+
+/* roztocze */
+.roz{display:grid;gap:28px;align-items:center}
+@media(min-width:1000px){.roz{grid-template-columns:1.1fr 1fr;gap:64px}}
+.roz .pics{display:grid;grid-template-columns:1.4fr 1fr;gap:8px;border-radius:6px;overflow:hidden}
+.roz .pics img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/5}
+.roz p{color:#2A3947;margin-top:14px;max-width:56ch}
+.roz ul{margin-top:18px;display:grid;gap:10px}
+.roz li{display:flex;gap:12px;align-items:baseline}
+.roz li b{min-width:7.5em;flex:none;white-space:nowrap;color:var(--n)}
+
+/* kontakt */
+.kont{display:grid;gap:32px}
+@media(min-width:1000px){.kont{grid-template-columns:1fr 1.3fr;gap:56px}}
+.kd{display:grid;gap:18px;margin-top:24px}
+.kd div{border-top:1px solid var(--line);padding-top:14px}
+.kd span{display:block;color:var(--mut);font-size:15px}
+.kd a,.kd b{font-size:1.25rem;font-weight:600;text-decoration:none;color:var(--n)}
+.kd a:hover{text-decoration:underline}
+.map{min-height:360px;border-radius:6px;overflow:hidden;background:var(--g);position:relative}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.map p{position:absolute;inset:auto 0 0 0;padding:16px;color:var(--mut)}
+
+/* stopka */
+.foot{background:var(--g);border-top:1px solid var(--line);padding:40px 0 28px;font-size:15px;color:var(--mut)}
+.fg{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media(min-width:900px){.fg{grid-template-columns:2fr 1fr 1fr 1fr}}
+.foot b{color:var(--ink);display:block;margin-bottom:6px}
+.foot a{color:var(--mut);text-decoration:none;display:block;padding:3px 0}
+.foot a:hover{color:var(--n)}
+.fb{display:flex;justify-content:space-between;align-items:center;gap:12px 24px;flex-wrap:wrap;margin-top:28px;padding-top:18px;border-top:1px solid var(--line)}
+.fb .wylinka-badge{display:inline-flex;padding:0}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:80;background:rgba(5,18,30,.94);display:flex;align-items:center;justify-content:center;padding:16px}
+.lb[hidden]{display:none}
+.lb img{max-width:min(96vw,1200px);max-height:86vh;width:auto;height:auto}
+.lb button{position:absolute;top:12px;right:12px;width:52px;height:52px;border:0;background:#fff;border-radius:4px;font-size:28px;cursor:pointer}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="sun" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M32 33a1.4 1.4 0 0 1 2.8 0a2.8 2.8 0 0 1-5.6 0a4.2 4.2 0 0 1 8.4 0a5.6 5.6 0 0 1-11.2 0a7 7 0 0 1 14 0"/><path d="M31.7 19.8L31.2 13.2M41.4 23.2L44.6 19.6M44.8 28.1L51.0 25.6M44.7 38.4L49.0 40.3M41.1 43.1L45.3 48.2M31.2 46.1L30.7 50.9M25.6 44.2L22.1 49.8M19.7 35.7L15.0 36.7M19.8 29.8L13.4 28.2M26.0 21.6L23.6 17.4"/></g></symbol><symbol id="tel" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></symbol><symbol id="ray3" viewBox="0 0 54 18"><g stroke="currentColor" stroke-width="3.4" stroke-linecap="round"><path d="M3 15 8 4M20 15V2M32 15 37 4"/></g></symbol></svg>
+<a class="skip" href="#tresc">Przejdź do treści</a>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="Sun Tourist - strona główna"><img src="img/logo-320.webp" width="320" height="103" alt="Sun Tourist"></a>
+    <nav class="nav" aria-label="Menu główne">
+      <a href="#teraz">Teraz w sprzedaży</a>
+      <a href="#katalog">Wszystkie wycieczki</a>
+      <a href="#karta">Grecja 2026</a>
+      <a href="#biuro">O biurze</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a class="tel" href="tel:+48604994346"><svg aria-hidden="true"><use href="#tel"/></svg>604 994 346</a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Otwórz menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    <a class="mtel" href="tel:+48604994346" aria-label="Zadzwoń: 604 994 346"><svg aria-hidden="true"><use href="#tel"/></svg></a>
+  </div>
+  <nav class="menu" id="menu" hidden aria-label="Menu mobilne">
+    <a href="#teraz">Teraz w sprzedaży</a>
+    <a href="#katalog">Wszystkie wycieczki</a>
+    <a href="#karta">Grecja 2026</a>
+    <a href="#biuro">O biurze</a>
+    <a href="#kontakt">Kontakt</a>
+    <a class="btn" href="tel:+48604994346">Zadzwoń: 604 994 346</a>
+  </nav>
+</header>
+
+<main id="tresc">
+<section class="hero" aria-labelledby="h1">
+  <picture>
+    <source media="(max-width:760px)" srcset="img/hero-m-360.webp 360w, img/hero-m-476.webp 476w" sizes="100vw">
+    <img src="img/hero-d-1147.webp" srcset="img/hero-d-960.webp 960w, img/hero-d-1147.webp 1147w" sizes="100vw" width="1147" height="768" alt="Akropol w Atenach, punkt programu wycieczki Rajska Grecja" fetchpriority="high">
+  </picture>
+  <div class="wrap">
+    <h1 id="h1">Biuro turystyczne w&nbsp;Zamościu. Chodzi o&nbsp;to, aby wyruszyć</h1>
+    <p class="lead">Wycieczki szkolne, kolonie, zielone szkoły i&nbsp;wyjazdy dla grup, w&nbsp;Polsce i&nbsp;za granicą.</p>
+    <form class="search" id="szukaj" action="#katalog">
+      <label class="fld k"><span>Kierunek</span>
+        <select name="k" id="sk"><option value="">Dowolny kierunek</option><option value="roztocze">Roztocze</option><option value="polska">Polska</option><option value="grecja">Grecja</option><option value="czarnogora">Czarnogóra</option><option value="wlochy">Włochy (Sycylia)</option><option value="turcja">Turcja</option></select></label>
+      <label class="fld"><span>Termin</span>
+        <select name="m" id="sm"><option value="">Dowolny</option><option value="6">Czerwiec 2026</option><option value="7">Lipiec 2026</option><option value="8">Sierpień 2026</option><option value="g">Dla grupy, do ustalenia</option></select></label>
+      <label class="fld"><span>Cena za osobę</span>
+        <select name="c" id="sc"><option value="">Dowolna</option><option value="0-300">do 300 zł</option><option value="301-700">300-700 zł</option><option value="701-2500">700-2 500 zł</option><option value="2501-99999">ponad 2 500 zł</option></select></label>
+      <button class="btn" type="submit">Szukaj wycieczek</button>
+    </form>
+    <nav class="quick" aria-label="Rodzaje wyjazdów">
+      <a href="#katalog" data-r="szkolne"><svg class="sun" aria-hidden="true"><use href="#sun"/></svg>Wycieczki szkolne</a>
+      <a href="#katalog" data-r="kolonie"><svg class="sun" aria-hidden="true"><use href="#sun"/></svg>Obozy i kolonie</a>
+      <a href="#katalog" data-r="zielone"><svg class="sun" aria-hidden="true"><use href="#sun"/></svg>Zielone szkoły</a>
+      <a href="#katalog" data-r="pielgrzymki"><svg class="sun" aria-hidden="true"><use href="#sun"/></svg>Pielgrzymki</a>
+      <a href="#katalog" data-r="samolot"><svg class="sun" aria-hidden="true"><use href="#sun"/></svg>Wycieczki samolotowe</a>
+    </nav>
+  </div>
+</section>
+
+<section class="sec" id="teraz" aria-labelledby="h-teraz">
+  <div class="wrap">
+    <div class="head">
+      <div><svg class="rays" aria-hidden="true"><use href="#ray3"/></svg><h2 id="h-teraz">Teraz w sprzedaży</h2><p>Wakacje 2026 z wyjazdem z Zamościa i Tomaszowa Lubelskiego oraz wyjazdy na Roztocze i w góry dla grup.</p></div>
+      <div class="arrows"><button type="button" data-dir="-1" aria-label="Poprzednie"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2"/></svg></button><button type="button" data-dir="1" aria-label="Następne"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2"/></svg></button></div>
+    </div>
+    <ul class="row" id="row">
+<li class="card">
+  <a class="ph" href="#karta" tabindex="-1" aria-hidden="true"><img src="img/t-grecja1-300.webp" srcset="img/t-grecja1-300.webp 300w" sizes="(max-width:760px) 78vw, 330px" width="300" height="168" loading="lazy" decoding="async" alt="Rajska Grecja - Peloponez, I turnus"></a>
+  <div class="cb">
+    <p class="meta"><span>29.06-09.07.2026</span><span>11 dni</span></p>
+    <h3><a href="#karta">Rajska Grecja - Peloponez, I turnus</a></h3>
+    <p class="pl">Tolo, Hotel Esperia***</p>
+    <p class="rz">Obóz i kolonie · autokar</p>
+    <p class="pr"><b>3 000 zł</b>/os.</p>
+  </div>
+</li>
+<li class="card">
+  <a class="ph" href="https://www.suntourist.pl/oferta/wycieczki-dla-doroslych/403-rajska-grecja-peloponez-2-turnus" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/t-grecja2-275.webp" srcset="img/t-grecja2-275.webp 275w" sizes="(max-width:760px) 78vw, 330px" width="275" height="183" loading="lazy" decoding="async" alt="Rajska Grecja - Peloponez, II turnus"></a>
+  <div class="cb">
+    <p class="meta"><span>13-23.07.2026</span><span>11 dni</span></p>
+    <h3><a href="https://www.suntourist.pl/oferta/wycieczki-dla-doroslych/403-rajska-grecja-peloponez-2-turnus" target="_blank" rel="noopener">Rajska Grecja - Peloponez, II turnus</a></h3>
+    <p class="pl">Tolo, Hotel Esperia***</p>
+    <p class="rz">Obóz i kolonie · autokar</p>
+    <p class="pr"><b>3 000 zł</b>/os.</p>
+  </div>
+</li>
+<li class="card">
+  <a class="ph" href="https://www.suntourist.pl/oferta/wycieczki-dla-doroslych/402-balkanska-wyprawa-czarnogora" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/t-czarnogora-290.webp" srcset="img/t-czarnogora-290.webp 290w" sizes="(max-width:760px) 78vw, 330px" width="290" height="174" loading="lazy" decoding="async" alt="Bałkańska wyprawa - Czarnogóra"></a>
+  <div class="cb">
+    <p class="meta"><span>24.07-01.08.2026</span><span>9 dni</span></p>
+    <h3><a href="https://www.suntourist.pl/oferta/wycieczki-dla-doroslych/402-balkanska-wyprawa-czarnogora" target="_blank" rel="noopener">Bałkańska wyprawa - Czarnogóra</a></h3>
+    <p class="pl">Dobra Voda, Hotel Villa Ponta***</p>
+    <p class="rz">Obóz i kolonie · autokar</p>
+    <p class="pr"><b>2 800 zł</b>/os.</p>
+  </div>
+</li>
+<li class="card">
+  <a class="ph" href="https://www.suntourist.pl/oferta/32-aktualnie-w-sprzedazy/381-krakow-energylandia-4" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/t-katy-300.webp" srcset="img/t-katy-300.webp 300w, img/t-katy-452.webp 452w" sizes="(max-width:760px) 78vw, 330px" width="300" height="151" loading="lazy" decoding="async" alt="Kolonie nad morzem - Kąty Rybackie"></a>
+  <div class="cb">
+    <p class="meta"><span>24-31.07.2026</span><span>8 dni</span></p>
+    <h3><a href="https://www.suntourist.pl/oferta/32-aktualnie-w-sprzedazy/381-krakow-energylandia-4" target="_blank" rel="noopener">Kolonie nad morzem - Kąty Rybackie</a></h3>
+    <p class="pl">Mierzeja Wiślana, ośrodek Panorama</p>
+    <p class="rz">Obóz i kolonie · autokar</p>
+    <p class="pr"><b>2 500 zł</b></p>
+  </div>
+</li>
+<li class="card">
+  <a class="ph" href="https://www.suntourist.pl/oferta/32-aktualnie-w-sprzedazy/379-krakow-energylandia-2" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/t-kulig-275.webp" srcset="img/t-kulig-275.webp 275w" sizes="(max-width:760px) 78vw, 330px" width="275" height="183" loading="lazy" decoding="async" alt="Kulig po Roztoczu"></a>
+  <div class="cb">
+    <p class="meta"><span>termin dla grupy</span><span>1 dzień</span></p>
+    <h3><a href="https://www.suntourist.pl/oferta/32-aktualnie-w-sprzedazy/379-krakow-energylandia-2" target="_blank" rel="noopener">Kulig po Roztoczu</a></h3>
+    <p class="pl">np. Karczma Szum w Górecku Kościelnym</p>
+    <p class="rz">Wycieczka szkolna · autokar lub bus</p>
+    <p class="pr"><b>od 170 zł</b>/os.</p>
+  </div>
+</li>
+<li class="card">
+  <a class="ph" href="https://www.suntourist.pl/oferta/32-aktualnie-w-sprzedazy/269-bieszczadzkie-wrzosowiska" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/t-bieszczady-300.webp" srcset="img/t-bieszczady-300.webp 300w, img/t-bieszczady-402.webp 402w" sizes="(max-width:760px) 78vw, 330px" width="300" height="200" loading="lazy" decoding="async" alt="Bieszczadzkie wrzosowiska"></a>
+  <div class="cb">
+    <p class="meta"><span>termin dla grupy</span><span>3 dni</span></p>
+    <h3><a href="https://www.suntourist.pl/oferta/32-aktualnie-w-sprzedazy/269-bieszczadzkie-wrzosowiska" target="_blank" rel="noopener">Bieszczadzkie wrzosowiska</a></h3>
+    <p class="pl">Krasiczyn, Połoniny, Zapora w Solinie</p>
+    <p class="rz">Wycieczka szkolna · autokar</p>
+    <p class="pr"><b>600 zł</b>/os.</p>
+  </div>
+</li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec g" id="katalog" aria-labelledby="h-kat">
+  <div class="wrap">
+    <div class="head"><div><svg class="rays" aria-hidden="true"><use href="#ray3"/></svg><h2 id="h-kat">Wszystkie wycieczki</h2><p>Wybierz rodzaj wyjazdu, kierunek, termin i cenę. Wycieczki dla grup wyceniamy indywidualnie, ceny podlegają negocjacji.</p></div></div>
+    <div class="cat">
+      <div class="filters" role="group" aria-label="Filtry">
+        <div class="chips" id="chips">
+          <button class="chip" type="button" data-r="" aria-pressed="true">Wszystkie <small data-n="">15</small></button>
+          <button class="chip" type="button" data-r="szkolne" aria-pressed="false">Wycieczki szkolne <small data-n="szkolne">7</small></button>
+          <button class="chip" type="button" data-r="kolonie" aria-pressed="false">Obozy i kolonie <small data-n="kolonie">4</small></button>
+          <button class="chip" type="button" data-r="zielone" aria-pressed="false">Zielone szkoły <small data-n="zielone">1</small></button>
+          <button class="chip" type="button" data-r="pielgrzymki" aria-pressed="false">Pielgrzymki <small data-n="pielgrzymki">1</small></button>
+          <button class="chip" type="button" data-r="samolot" aria-pressed="false">Samolotowe <small data-n="samolot">2</small></button>
+        </div>
+        <div class="fgrid">
+          <label class="fld"><span>Kierunek</span><select id="fk"><option value="">Dowolny</option><option value="roztocze">Roztocze</option><option value="polska">Polska</option><option value="grecja">Grecja</option><option value="czarnogora">Czarnogóra</option><option value="wlochy">Włochy (Sycylia)</option><option value="turcja">Turcja</option></select></label>
+          <label class="fld"><span>Termin</span><select id="fm"><option value="">Dowolny</option><option value="6">Czerwiec 2026</option><option value="7">Lipiec 2026</option><option value="8">Sierpień 2026</option><option value="g">Dla grupy, do ustalenia</option></select></label>
+          <label class="fld"><span>Cena za osobę</span><select id="fc"><option value="">Dowolna</option><option value="0-300">do 300 zł</option><option value="301-700">300-700 zł</option><option value="701-2500">700-2 500 zł</option><option value="2501-99999">ponad 2 500 zł</option></select></label>
+          <label class="fld"><span>Długość</span><select id="fd"><option value="">Dowolna</option><option value="1-1">1 dzień</option><option value="2-3">2-3 dni</option><option value="4-99">tydzień i dłużej</option></select></label>
+        </div>
+      </div>
+      <div>
+        <div class="fres" aria-live="polite"><b id="cnt">15 wycieczek</b><button class="clear" type="button" id="clear" hidden>Wyczyść filtry</button></div>
+        <ul class="grid" id="grid">
+<li class="card" data-r="kolonie" data-k="grecja" data-m="6 7" data-d="11" data-c="3000">
+  <a class="ph" href="#karta" tabindex="-1" aria-hidden="true"><img src="img/t-grecja1-300.webp" srcset="img/t-grecja1-300.webp 300w" sizes="(max-width:760px) 78vw, 330px" width="300" height="168" loading="lazy" decoding="async" alt="Rajska Grecja - Peloponez, I turnus"></a>
+  <div class="cb">
+    <p class="meta"><span>29.06-09.07.2026</span><span>11 dni</span></p>
+    <h3><a href="#karta">Rajska Grecja - Peloponez, I turnus</a></h3>
+    <p class="pl">Tolo, Hotel Esperia***</p>
+    <p class="rz">Obóz i kolonie · autokar</p>
+    <p class="pr"><b>3 000 zł</b>/os.</p>
+  </div>
+</li>
+<li class="card" data-r="kolonie" data-k="grecja" data-m="7" data-d="11" data-c="3000">
+  <a class="ph" href="https://www.suntourist.pl/oferta/wycieczki-dla-doroslych/403-rajska-grecja-peloponez-2-turnus" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/t-grecja2-275.webp" srcset="img/t-grecja2-275.webp 275w" sizes="(max-width:760px) 78vw, 330px" width="275" height="183" loading="lazy" decoding="async" alt="Rajska Grecja - Peloponez, II turnus"></a>
+  <div class="cb">
+    <p class="meta"><span>13-23.07.2026</span><span>11 dni</span></p>
+    <h3><a href="https://www.suntourist.pl/oferta/wycieczki-dla-doroslych/403-rajska-grecja-peloponez-2-turnus" target="_blank" rel="noopener">Rajska Grecja - Peloponez, II turnus</a></h3>
+    <p class="pl">Tolo, Hotel Esperia***</p>
+    <p class="rz">Obóz i kolonie · autokar</p>
+    <p class="pr"><b>3 000 zł</b>/os.</p>
+  </div>
+</li>
+<li class="card" data-r="kolonie" data-k="czarnogora" data-m="7 8" data-d="9" data-c="2800">
+  <a class="ph" href="https://www.suntourist.pl/oferta/wycieczki-dla-doroslych/402-balkanska-wyprawa-czarnogora" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/t-czarnogora-290.webp" srcset="img/t-czarnogora-290.webp 290w" sizes="(max-width:760px) 78vw, 330px" width="290" height="174" loading="lazy" decoding="async" alt="Bałkańska wyprawa - Czarnogóra"></a>
+  <div class="cb">
+    <p class="meta"><span>24.07-01.08.2026</span><span>9 dni</span></p>
+    <h3><a href="https://www.suntourist.pl/oferta/wycieczki-dla-doroslych/402-balkanska-wyprawa-czarnogora" target="_blank" rel="noopener">Bałkańska wyprawa - Czarnogóra</a></h3>
+    <p class="pl">Dobra Voda, Hotel Villa Ponta***</p>
+    <p class="rz">Obóz i kolonie · autokar</p>
+    <p class="pr"><b>2 800 zł</b>/os.</p>
+  </div>
+</li>
+<li class="card" data-r="kolonie" data-k="polska" data-m="7" data-d="8" data-c="2500">
+  <a class="ph" href="https://www.suntourist.pl/oferta/32-aktualnie-w-sprzedazy/381-krakow-energylandia-4" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/t-katy-300.webp" srcset="img/t-katy-300.webp 300w, img/t-katy-452.webp 452w" sizes="(max-width:760px) 78vw, 330px" width="300" height="151" loading="lazy" decoding="async" alt="Kolonie nad morzem - Kąty Rybackie"></a>
+  <div class="cb">
+    <p class="meta"><span>24-31.07.2026</span><span>8 dni</span></p>
+    <h3><a href="https://www.suntourist.pl/oferta/32-aktualnie-w-sprzedazy/381-krakow-energylandia-4" target="_blank" rel="noopener">Kolonie nad morzem - Kąty Rybackie</a></h3>
+    <p class="pl">Mierzeja Wiślana, ośrodek Panorama</p>
+    <p class="rz">Obóz i kolonie · autokar</p>
+    <p class="pr"><b>2 500 zł</b></p>
+  </div>
+</li>
+<li class="card" data-r="szkolne" data-k="roztocze polska" data-m="g" data-d="1" data-c="170">
+  <a class="ph" href="https://www.suntourist.pl/oferta/32-aktualnie-w-sprzedazy/379-krakow-energylandia-2" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/t-kulig-275.webp" srcset="img/t-kulig-275.webp 275w" sizes="(max-width:760px) 78vw, 330px" width="275" height="183" loading="lazy" decoding="async" alt="Kulig po Roztoczu"></a>
+  <div class="cb">
+    <p class="meta"><span>termin dla grupy</span><span>1 dzień</span></p>
+    <h3><a href="https://www.suntourist.pl/oferta/32-aktualnie-w-sprzedazy/379-krakow-energylandia-2" target="_blank" rel="noopener">Kulig po Roztoczu</a></h3>
+    <p class="pl">np. Karczma Szum w Górecku Kościelnym</p>
+    <p class="rz">Wycieczka szkolna · autokar lub bus</p>
+    <p class="pr"><b>od 170 zł</b>/os.</p>
+  </div>
+</li>
+<li class="card" data-r="szkolne" data-k="roztocze polska" data-m="g" data-d="1" data-c="150">
+  <a class="ph" href="https://www.suntourist.pl/oferta/32-aktualnie-w-sprzedazy/243-rajd-integracyjny-po-roztoczu" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/t-rajdy-300.webp" srcset="img/t-rajdy-300.webp 300w, img/t-rajdy-480.webp 480w" sizes="(max-width:760px) 78vw, 330px" width="300" height="199" loading="lazy" decoding="async" alt="Rajd integracyjny po Roztoczu"></a>
+  <div class="cb">
+    <p class="meta"><span>termin dla grupy</span><span>1 dzień</span></p>
+    <h3><a href="https://www.suntourist.pl/oferta/32-aktualnie-w-sprzedazy/243-rajd-integracyjny-po-roztoczu" target="_blank" rel="noopener">Rajd integracyjny po Roztoczu</a></h3>
+    <p class="pl">szlaki Krasnobrodu, Zwierzyńca i Suśca</p>
+    <p class="rz">Wycieczka szkolna · autokar</p>
+    <p class="pr"><b>150 zł</b>/os.</p>
+  </div>
+</li>
+<li class="card" data-r="szkolne" data-k="polska" data-m="g" data-d="1" data-c="300">
+  <a class="ph" href="https://www.suntourist.pl/oferta/32-aktualnie-w-sprzedazy/245-jesienna-warszawa" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/t-warszawa-300.webp" srcset="img/t-warszawa-300.webp 300w, img/t-warszawa-480.webp 480w" sizes="(max-width:760px) 78vw, 330px" width="300" height="200" loading="lazy" decoding="async" alt="Warszawa - Centrum Nauki Kopernik"></a>
+  <div class="cb">
+    <p class="meta"><span>termin dla grupy</span><span>1 dzień</span></p>
+    <h3><a href="https://www.suntourist.pl/oferta/32-aktualnie-w-sprzedazy/245-jesienna-warszawa" target="_blank" rel="noopener">Warszawa - Centrum Nauki Kopernik</a></h3>
+    <p class="pl">Stare Miasto, Zamek Królewski</p>
+    <p class="rz">Wycieczka szkolna · autokar</p>
+    <p class="pr"><b>300 zł</b>/os.</p>
+  </div>
+</li>
+<li class="card" data-r="szkolne" data-k="polska" data-m="g" data-d="2" data-c="550">
+  <a class="ph" href="https://www.suntourist.pl/oferta/32-aktualnie-w-sprzedazy/244-krakow-energylandia" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/t-energy-300.webp" srcset="img/t-energy-300.webp 300w, img/t-energy-480.webp 480w" sizes="(max-width:760px) 78vw, 330px" width="300" height="196" loading="lazy" decoding="async" alt="Kraków - Energylandia"></a>
+  <div class="cb">
+    <p class="meta"><span>termin dla grupy</span><span>2 dni</span></p>
+    <h3><a href="https://www.suntourist.pl/oferta/32-aktualnie-w-sprzedazy/244-krakow-energylandia" target="_blank" rel="noopener">Kraków - Energylandia</a></h3>
+    <p class="pl">Wawel, Stare Miasto, park w Zatorze</p>
+    <p class="rz">Wycieczka szkolna · autokar</p>
+    <p class="pr"><b>550 zł</b>/os.</p>
+  </div>
+</li>
+<li class="card" data-r="szkolne" data-k="polska" data-m="g" data-d="3" data-c="600">
+  <a class="ph" href="https://www.suntourist.pl/oferta/32-aktualnie-w-sprzedazy/255-krakow-zakopane-2" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/t-zakopane-300.webp" srcset="img/t-zakopane-300.webp 300w, img/t-zakopane-480.webp 480w" sizes="(max-width:760px) 78vw, 330px" width="300" height="198" loading="lazy" decoding="async" alt="Kraków - Zakopane"></a>
+  <div class="cb">
+    <p class="meta"><span>termin dla grupy</span><span>3 dni</span></p>
+    <h3><a href="https://www.suntourist.pl/oferta/32-aktualnie-w-sprzedazy/255-krakow-zakopane-2" target="_blank" rel="noopener">Kraków - Zakopane</a></h3>
+    <p class="pl">Łagiewniki, Wawel, Morskie Oko, Gubałówka</p>
+    <p class="rz">Wycieczka szkolna · autokar</p>
+    <p class="pr"><b>600 zł</b>/os.</p>
+  </div>
+</li>
+<li class="card" data-r="szkolne" data-k="polska" data-m="g" data-d="3" data-c="600">
+  <a class="ph" href="https://www.suntourist.pl/oferta/32-aktualnie-w-sprzedazy/269-bieszczadzkie-wrzosowiska" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/t-bieszczady-300.webp" srcset="img/t-bieszczady-300.webp 300w, img/t-bieszczady-402.webp 402w" sizes="(max-width:760px) 78vw, 330px" width="300" height="200" loading="lazy" decoding="async" alt="Bieszczadzkie wrzosowiska"></a>
+  <div class="cb">
+    <p class="meta"><span>termin dla grupy</span><span>3 dni</span></p>
+    <h3><a href="https://www.suntourist.pl/oferta/32-aktualnie-w-sprzedazy/269-bieszczadzkie-wrzosowiska" target="_blank" rel="noopener">Bieszczadzkie wrzosowiska</a></h3>
+    <p class="pl">Krasiczyn, Połoniny, Zapora w Solinie</p>
+    <p class="rz">Wycieczka szkolna · autokar</p>
+    <p class="pr"><b>600 zł</b>/os.</p>
+  </div>
+</li>
+<li class="card" data-r="szkolne" data-k="polska" data-m="g" data-d="3" data-c="400">
+  <a class="ph" href="https://www.suntourist.pl/oferta/wycieczki-szkolne/3-dniowe/151-w-krainie-zubra" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/t-zubry-300.webp" srcset="img/t-zubry-300.webp 300w, img/t-zubry-480.webp 480w" sizes="(max-width:760px) 78vw, 330px" width="300" height="200" loading="lazy" decoding="async" alt="W krainie żubra"></a>
+  <div class="cb">
+    <p class="meta"><span>termin dla grupy</span><span>3 dni</span></p>
+    <h3><a href="https://www.suntourist.pl/oferta/wycieczki-szkolne/3-dniowe/151-w-krainie-zubra" target="_blank" rel="noopener">W krainie żubra</a></h3>
+    <p class="pl">Białowieża, Hajnówka</p>
+    <p class="rz">Wycieczka szkolna · autokar</p>
+    <p class="pr"><b>400 zł</b>/os.</p>
+  </div>
+</li>
+<li class="card" data-r="zielone" data-k="grecja" data-m="g" data-d="12" data-c="1330">
+  <a class="ph" href="https://www.suntourist.pl/oferta/zielone-szkoly/183-w-krainie-zeusa-grecja" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/t-grecja561-300.webp" srcset="img/t-grecja561-300.webp 300w, img/t-grecja561-480.webp 480w" sizes="(max-width:760px) 78vw, 330px" width="300" height="201" loading="lazy" decoding="async" alt="W krainie Zeusa - Grecja"></a>
+  <div class="cb">
+    <p class="meta"><span>termin dla grupy</span><span>12 dni</span></p>
+    <h3><a href="https://www.suntourist.pl/oferta/zielone-szkoly/183-w-krainie-zeusa-grecja" target="_blank" rel="noopener">W krainie Zeusa - Grecja</a></h3>
+    <p class="pl">zielona szkoła, Riwiera Olimpijska</p>
+    <p class="rz">Zielona szkoła · autokar</p>
+    <p class="pr"><b>1 330 zł + 60 euro</b>/os.</p>
+  </div>
+</li>
+<li class="card" data-r="pielgrzymki" data-k="polska" data-m="g" data-d="3" data-c="250">
+  <a class="ph" href="https://www.suntourist.pl/oferta/pielgrzymki/91-krakow-zakopane-czestochowa" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/t-czestochowa-300.webp" srcset="img/t-czestochowa-300.webp 300w, img/t-czestochowa-480.webp 480w" sizes="(max-width:760px) 78vw, 330px" width="300" height="200" loading="lazy" decoding="async" alt="Kraków - Zakopane - Częstochowa"></a>
+  <div class="cb">
+    <p class="meta"><span>termin dla grupy</span><span>3 dni</span></p>
+    <h3><a href="https://www.suntourist.pl/oferta/pielgrzymki/91-krakow-zakopane-czestochowa" target="_blank" rel="noopener">Kraków - Zakopane - Częstochowa</a></h3>
+    <p class="pl">pielgrzymka, Łagiewniki i Jasna Góra</p>
+    <p class="rz">Pielgrzymka · autokar</p>
+    <p class="pr"><b>od 250 zł</b>/os.</p>
+  </div>
+</li>
+<li class="card" data-r="samolot" data-k="wlochy" data-m="g" data-d="8" data-c="3000">
+  <a class="ph" href="https://www.suntourist.pl/oferta/wczasy/278-sycylia-wyspa-slonca" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/t-sycylia-300.webp" srcset="img/t-sycylia-300.webp 300w, img/t-sycylia-480.webp 480w" sizes="(max-width:760px) 78vw, 330px" width="300" height="199" loading="lazy" decoding="async" alt="Sycylia - wyspa słońca"></a>
+  <div class="cb">
+    <p class="meta"><span>termin dla grupy</span><span>8 dni</span></p>
+    <h3><a href="https://www.suntourist.pl/oferta/wczasy/278-sycylia-wyspa-slonca" target="_blank" rel="noopener">Sycylia - wyspa słońca</a></h3>
+    <p class="pl">Katania i Etna, 7 noclegów</p>
+    <p class="rz">Wycieczka samolotowa · samolot</p>
+    <p class="pr"><b>3 000 zł</b>/os.</p>
+  </div>
+</li>
+<li class="card" data-r="samolot" data-k="turcja" data-m="g" data-d="8" data-c="1800">
+  <a class="ph" href="https://www.suntourist.pl/oferta/wczasy/370-turcja-kapadocja" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/t-turcja-300.webp" srcset="img/t-turcja-300.webp 300w, img/t-turcja-480.webp 480w" sizes="(max-width:760px) 78vw, 330px" width="300" height="200" loading="lazy" decoding="async" alt="Turcja - Kapadocja"></a>
+  <div class="cb">
+    <p class="meta"><span>termin dla grupy</span><span>8 dni</span></p>
+    <h3><a href="https://www.suntourist.pl/oferta/wczasy/370-turcja-kapadocja" target="_blank" rel="noopener">Turcja - Kapadocja</a></h3>
+    <p class="pl">Antalya, Konya, Göreme</p>
+    <p class="rz">Wycieczka samolotowa · samolot</p>
+    <p class="pr"><b>od 1 800 zł</b>/os.</p>
+  </div>
+</li>
+        </ul>
+        <button class="more" type="button" id="more">Pokaż wszystkie (15)</button>
+        <p class="empty" id="empty" hidden>Brak wycieczek dla tych filtrów. Zadzwoń, przygotujemy program dla Twojej grupy: 604 994 346.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="karta" aria-labelledby="h-karta">
+  <div class="wrap trip">
+    <div class="t-a">
+      <p class="crumb"><a href="#katalog">Wycieczki</a> / Obozy i kolonie / Grecja</p>
+      <h2 id="h-karta">Rajska Grecja - Peloponez</h2>
+      <p class="facts"><span><svg class="sun" aria-hidden="true"><use href="#sun"/></svg>11 dni</span><span><svg class="sun" aria-hidden="true"><use href="#sun"/></svg>Tolo, Hotel Esperia***</span><span><svg class="sun" aria-hidden="true"><use href="#sun"/></svg>autokar, wyżywienie HB</span><span><svg class="sun" aria-hidden="true"><use href="#sun"/></svg>obóz młodzieżowy i wczasy</span></p>
+      <div class="gal" id="gal">
+        <button type="button" data-src="img/hero-d-1147.webp"><img src="img/t-grecja561-480.webp" width="480" height="321" loading="lazy" alt="Akropol w Atenach"></button>
+        <button type="button" data-src="img/t-grecja1-300.webp"><img src="img/t-grecja1-300.webp" width="300" height="168" loading="lazy" alt="Plaża w Tolo na Peloponezie"></button>
+        <button type="button" data-src="img/t-grecja2-275.webp"><img src="img/t-grecja2-275.webp" width="275" height="183" loading="lazy" alt="Greckie wybrzeże"></button>
+      </div>
+      <p class="note">Hotel Esperia*** leży 200 m od piaszczystej plaży w Tolo, na wschodnim wybrzeżu Peloponezu. Pokoje 3-4 osobowe z balkonem, klimatyzacją i łazienką, w hotelu basen i restauracja bufetowa.</p>
+    </div>
+    <div class="t-c">
+
+      <div class="prog">
+        <h3>Program dzień po dniu</h3>
+        <ol class="days" style="list-style:none;margin:0;padding:0">
+          <li class="day"><svg class="sun" aria-hidden="true"><use href="#sun"/></svg><h4><span>29.06</span> Wyjazd</h4><p>Zamość, godz. 17:00, parking pod Lunetą (ul. Peowiaków). Tomaszów Lubelski, godz. 18:00, dawna baza PKS. Inne miasta do uzgodnienia telefonicznie. Nocny przejazd przez Słowację, Węgry, Serbię i Macedonię.</p></li>
+          <li class="day"><svg class="sun" aria-hidden="true"><use href="#sun"/></svg><h4><span>30.06</span> Nocleg tranzytowy</h4><p>W okolicy granicy macedońsko-greckiej: zakwaterowanie, obiadokolacja i nocleg.</p></li>
+          <li class="day"><svg class="sun" aria-hidden="true"><use href="#sun"/></svg><h4><span>01.07</span> Przyjazd do Tolo</h4><p>Śniadanie, wykwaterowanie i przejazd do Tolo. Zakwaterowanie, obiadokolacja, nocleg.</p></li>
+          <li class="day"><svg class="sun" aria-hidden="true"><use href="#sun"/></svg><h4><span>01-07.07</span> Pobyt i wycieczki</h4><p>Śniadanie w formie bufetu, czas wolny na odpoczynek i plażowanie, obiadokolacja w formie bufetu. Wycieczki:</p>
+            <ul>
+              <li>Kalambaka i Meteory: bizantyjskie klasztory zbudowane na niedostępnych skałach w górskiej dolinie.</li>
+              <li>Ateny: Akropol z Propylejami, Partenonem, Erechtejonem i świątynią Ateny Nike, Łuk Hadriana, stadion Kalimarmaro. Po drodze postój przy Kanale Korynckim.</li>
+              <li>Nafplion z twierdzą Palamidi, Mykeny, mityczne miasto Agamemnona, i Epidauros z najlepiej zachowanym antycznym teatrem.</li>
+            </ul></li>
+          <li class="day"><svg class="sun" aria-hidden="true"><use href="#sun"/></svg><h4><span>07.07</span> Droga powrotna</h4><p>Śniadanie, wykwaterowanie, przejazd w okolice granicy macedońsko-greckiej, obiadokolacja i nocleg.</p></li>
+          <li class="day"><svg class="sun" aria-hidden="true"><use href="#sun"/></svg><h4><span>08-09.07</span> Powrót</h4><p>Śniadanie i przejazd przez Macedonię, Serbię, Węgry i Słowację. Powrót w to samo miejsce 09.07 w godzinach porannych.</p></li>
+        </ol>
+        <p class="note">Program jest ramowy, kolejność zwiedzania może ulec zmianie.</p>
+      </div>
+      <div class="inc">
+        <div><h3>Cena zawiera</h3><p>Transport autokarem ze zwiększoną przestrzenią na nogi, opiekę pilota, przewodnika i wykwalifikowanej kadry pedagogicznej, wyżywienie według programu, ubezpieczenie KL i NNW, podatek VAT, obowiązkowy turystyczny fundusz gwarancyjny.</p></div>
+        <div><h3>Dodatkowo</h3><p>Bilety wstępu, przewodnicy lokalni i inne koszty programu: 100 euro, płatne u pilota w dniu wyjazdu. Potrzebny paszport lub dowód osobisty ważny min. pół roku i wypełniona karta uczestnika.</p></div>
+      </div>
+    </div>
+
+    <aside class="book" aria-label="Rezerwacja">
+      <p class="from">Cena za osobę</p>
+      <p class="big">3 000 zł <small>/os.</small></p>
+      <form id="rez">
+        <fieldset><legend>Termin</legend>
+          <label class="opt on"><input type="radio" name="t" value="I" checked><span><b>I turnus: 29.06-09.07.2026</b><small>wyjazd z Zamościa i Tomaszowa Lub.</small></span></label>
+          <label class="opt"><input type="radio" name="t" value="II"><span><b>II turnus: 13-23.07.2026</b><small>wyjazd z Zamościa i Tomaszowa Lub.</small></span></label>
+        </fieldset>
+        <fieldset><legend>Liczba uczestników</legend>
+          <div class="qty"><button type="button" data-q="-1" aria-label="Mniej">-</button><output id="q">1</output><button type="button" data-q="1" aria-label="Więcej">+</button></div>
+        </fieldset>
+        <fieldset><legend>Płatność</legend>
+          <label class="opt on"><input type="radio" name="z" value="30" checked><span><b>Przedpłata 30%</b><small>reszta najpóźniej 21 dni przed wyjazdem</small></span></label>
+          <label class="opt"><input type="radio" name="z" value="100"><span><b>Cała kwota</b></span></label>
+          <div class="pay">
+            <label class="opt on"><input type="radio" name="p" value="blik" checked>BLIK</label>
+            <label class="opt"><input type="radio" name="p" value="przelew">Przelew</label>
+            <label class="opt"><input type="radio" name="p" value="karta">Karta</label>
+          </div>
+        </fieldset>
+        <div class="sum"><div><span>Wartość wyjazdu</span><span id="sv">3 000 zł</span></div><div><span>Do zapłaty teraz</span><span id="sp">900 zł</span></div></div>
+        <button class="btn" type="submit">Zarezerwuj</button>
+        <p class="msg" id="msg" hidden>To podgląd. Na docelowej stronie w tym miejscu otworzy się płatność (BLIK, przelew lub karta), a biuro od razu dostanie zgłoszenie z danymi uczestników.</p>
+      </form>
+    </aside>
+  </div>
+</section>
+
+<section class="sec why" id="biuro" aria-labelledby="h-why">
+  <div class="wrap">
+    <svg class="rays" aria-hidden="true"><use href="#ray3"/></svg>
+    <h2 id="h-why">Dlaczego Sun Tourist</h2>
+    <p class="lead2">Biuro kontynuuje działalność biura Abraham Turist, obecnego na rynku od 2001 roku. Organizujemy kolonie, wczasy, wycieczki szkolne i zakładowe w kraju i za granicą.</p>
+    <ul class="wl">
+      <li><h3><svg class="sun" aria-hidden="true"><use href="#sun"/></svg>Gwarancja ceny najniższej</h3><p>Każdą wycieczkę zorganizujemy taniej niż inne biura w tym samym standardzie.</p></li>
+      <li><h3><svg class="sun" aria-hidden="true"><use href="#sun"/></svg>Licencjonowany organizator</h3><p>Wpis do Rejestru Organizatorów i Pośredników Turystycznych Województwa Lubelskiego nr 140. W cenie wyjazdów zagranicznych ubezpieczenie KL i NNW oraz turystyczny fundusz gwarancyjny.</p></li>
+      <li><h3><svg class="sun" aria-hidden="true"><use href="#sun"/></svg>Autokary i busy</h3><p>Nowoczesne autokary i busy dla różnej liczby osób. Wycieczkę zorganizujemy dla dowolnej wielkości grupy.</p></li>
+      <li><h3><svg class="sun" aria-hidden="true"><use href="#sun"/></svg>Cena liczona dla grupy</h3><p>Ceny kalkulujemy indywidualnie: zależą od terminu, liczby osób i wymagań grupy. Wszystkie podlegają negocjacji.</p></li>
+      <li><h3><svg class="sun" aria-hidden="true"><use href="#sun"/></svg>Wyjazd blisko domu</h3><p>Zbiórki w Zamościu, na parkingu pod Lunetą, i w Tomaszowie Lubelskim. Inne miasta do uzgodnienia.</p></li>
+      <li><h3><svg class="sun" aria-hidden="true"><use href="#sun"/></svg>Od jednego dnia do wyjazdów wielodniowych</h3><p>Wycieczki 1-, 2- i 3-dniowe, wyjazdy wielodniowe, zielone szkoły, kolonie, pielgrzymki maturzystów i wyjazdy samolotowe.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="h-roz">
+  <div class="wrap roz">
+    <div class="pics">
+      <img src="img/roz-700.webp" srcset="img/roz-700.webp 700w, img/roz-1155.webp 1155w" sizes="(max-width:1000px) 58vw, 30vw" width="700" height="465" loading="lazy" alt="Szumy na Tanwi na Roztoczu">
+      <img src="img/t-domek-480.webp" width="480" height="360" loading="lazy" alt="Domek do wynajęcia w Krasnobrodzie">
+    </div>
+    <div>
+      <svg class="rays" aria-hidden="true"><use href="#ray3"/></svg>
+      <h2 id="h-roz">Roztocze zaraz za progiem</h2>
+      <p>Z Zamościa na Roztocze jest blisko, dlatego kuligi, rajdy i wyjazdy integracyjne robimy na miejscu, z ogniskiem i pilotem.</p>
+      <ul>
+        <li><b>od 170 zł</b><span>kulig po Roztoczu z ogniskiem i gorącą herbatą</span></li>
+        <li><b>150 zł</b><span>rajd integracyjny szlakami Roztocza z przewodnikiem</span></li>
+        <li><b>500 zł/doba</b><span>wynajem całorocznych, 8-osobowych domków w Krasnobrodzie: sauna, jacuzzi i rowery gratis</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec g" id="kontakt" aria-labelledby="h-kont">
+  <div class="wrap kont">
+    <div>
+      <svg class="rays" aria-hidden="true"><use href="#ray3"/></svg>
+      <h2 id="h-kont">Kontakt i rezerwacje</h2>
+      <div class="kd">
+        <div><span>Infolinia i rezerwacje</span><a href="tel:+48604994346">604 994 346</a></div>
+        <div><span>E-mail</span><a href="mailto:suntourist@op.pl">suntourist@op.pl</a></div>
+        <div><span>Biuro</span><b>ul. Wieniawskiego 15, 22-400 Zamość</b></div>
+        <div><span>Godziny pracy</span><b>pon.-pt. 8:00-16:00</b></div>
+      </div>
+    </div>
+    <div class="map" id="map" data-src="https://maps.google.com/maps?q=Wieniawskiego%2015%2C%2022-400%20Zamo%C5%9B%C4%87&amp;z=16&amp;output=embed"><p>Mapa: ul. Wieniawskiego 15, Zamość</p></div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="fg">
+      <div><b>Biuro Turystyczne Sun Tourist</b>ul. Wieniawskiego 15, 22-400 Zamość<br>Organizator turystyki, wpis do rejestru Woj. Lubelskiego nr 140</div>
+      <div><b>Oferta</b><a href="#katalog">Wycieczki szkolne</a><a href="#katalog">Obozy i kolonie</a><a href="#katalog">Pielgrzymki</a></div>
+      <div><b>Biuro</b><a href="#biuro">O biurze</a><a href="#kontakt">Kontakt</a><a href="https://www.facebook.com/suntourist" rel="noopener" target="_blank">Facebook</a></div>
+      <div><b>Rezerwacje</b><a href="tel:+48604994346">604 994 346</a><a href="mailto:suntourist@op.pl">suntourist@op.pl</a></div>
+    </div>
+    <div class="fb"><span>© 2026 Sun Tourist. Podgląd koncepcji: ceny i terminy z suntourist.pl, stan na 17.11.2026.</span><a class="wylinka-badge" href="https://wylinka.pl/?utm_source=suntourist.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a></div>
+  </div>
+</footer>
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Zdjęcie"><img alt=""><button type="button" aria-label="Zamknij">×</button></div>
+<script src="app.js" defer></script>
+</body>
+</html>
